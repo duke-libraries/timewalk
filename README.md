@@ -1,5 +1,7 @@
 # timewalk
 
+NOTE: This fork includes one minor change to default all non-Bulk dates to date_type="inclusive" (not single)
+
 An automated date parser for ArchivesSpace.
 
 timewalk will automatically parse any values in ArchivesSpace's Date Expresssion field into ISO8601-compliant `Begin` and `End` values.  In addition, it will parse out date certainties and set the calendar/era values automatically.
