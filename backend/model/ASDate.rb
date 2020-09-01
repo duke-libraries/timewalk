@@ -39,7 +39,7 @@ class ASDate < Sequel::Model(:date)
     asdate.end = ttdate[:date_end] if ttdate[:date_end]
     asdate.certainty = ttdate[:certainty] if ttdate[:certainty]
     if dtype != 'bulk'
-      asdate.date_type = ttdate[:inclusive_range] ? 'inclusive' : 'single'
+      asdate.date_type = 'inclusive'
     end
 
     # default to ce/gregorian because why not
